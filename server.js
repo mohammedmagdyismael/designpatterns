@@ -17,11 +17,12 @@ const composite = require('./Patterns/Structural_Patterns/Composite_Pattern');
  * Behavourial 
  */
 const template = require('./Patterns/Behoverial_Patterns/Template_Pattern');
+const iterator = require('./Patterns/Behoverial_Patterns/Iterator_Pattern');
 
 
 app.use(express.json({extended : false}));
 
-template();
+iterator();
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{
